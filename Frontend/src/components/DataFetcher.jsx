@@ -9,7 +9,7 @@ function DataFetcher() {
   const fetchData = async () => {
     setLoading(true);
     try {
-      const response = await fetch('https:/lab-task-api.vercel.app/api/data');
+      const response = await fetch('https://lab-task-api.vercel.app/api/data');
       
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
