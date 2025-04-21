@@ -18,7 +18,7 @@ function TaskForm({ onTaskAdded }) {
     setError(null);
     
     try {
-      const response = await fetch('http://localhost:8000/api/data', {
+      const response = await fetch('https:/lab-task-api.vercel.app/api/data', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
