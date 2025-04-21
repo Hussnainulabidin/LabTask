@@ -38,7 +38,7 @@ const Task = mongoose.model('Task', taskSchema);
 
 // Enable CORS for the frontend
 app.use(cors({
-  origin: 'https://lab-task-sable.vercel.app/' // Vite default port
+  origin: 'https://lab-task-miox.vercel.app/' // Vite default port
 }));
 
 // Parse JSON request body
