@@ -38,7 +38,7 @@ const Task = mongoose.model('Task', taskSchema);
 
 // Enable CORS for the frontend
 app.use(cors({
-  origin: 'http://localhost:5173' // Vite default port
+  origin: '*' // Vite default port
 }));
 
 // Parse JSON request body

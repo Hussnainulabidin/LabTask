@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import "./DataFetcher.css";
 
 function TaskForm({ onTaskAdded }) {
   const [title, setTitle] = useState('');
@@ -18,7 +19,7 @@ function TaskForm({ onTaskAdded }) {
     setError(null);
     
     try {
-      const response = await fetch('http://localhost:8000/api/data', {
+      const response = await fetch('https://taskhosting.alwaysdata.net/api/data', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -60,6 +61,7 @@ function TaskForm({ onTaskAdded }) {
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             disabled={isSubmitting}
+            placeholder="Enter task description"
           />
         </div>
         

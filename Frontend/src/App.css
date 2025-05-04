@@ -1,3 +1,67 @@
+:root {
+  --primary: #3a7bd5;
+  --primary-light: #eef5ff;
+  --primary-dark: #2d62aa;
+  --accent: #00d2ff;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --background: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.App-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.app-subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+main {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.App-footer {
+  margin-top: 2rem;
+  padding: 1.5rem 0;
+  text-align: center;
+  background-color: var(--primary-light);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
